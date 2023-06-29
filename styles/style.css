@@ -1,0 +1,568 @@
+/* ACCUEIL AND ALL PAGES */
+
+/* Styles I use for almost all pages */
+
+/* FOR GENERAL RULES  */
+
+/* IMPORTING FONTS */
+
+@font-face {
+    font-family: "Panthera";
+    src: url("../fonts/Panthera.woff2") format("woff2"),
+        url("../fonts/Panthera.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Beyno";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/BEYNO.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Wakanda4";
+    src: url("../fonts/wakandaforever-regular-webfont.woff2") format("woff2"),
+        url("../fonts/pantheraregular-mvz9j-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Canta";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Cantarell-Regular.woff") format("woff");
+}
+
+/* FOR PAGE RULES */
+
+body {
+    margin: 0%;
+    background: url(../Illustrations-Logo/All-pages/arrière_plan.png);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Panthera";
+    color: #9e91b7;
+}
+
+h2 {
+    font-family: "Beyno";
+    color: #9e91b7;
+}
+
+h3 {
+    font-family: "Canta";
+}
+
+p {
+    font-family: "Canta";
+    font-size: 14px;
+    text-align: justify;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #3d2da6;
+    color: #f2cef2;
+}
+
+/* FOR PLACEHOLDER COLOR IN FORM */
+::placeholder {
+    color: #021740;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #021740;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #021740;
+}
+
+/* START SIDE NAVIGATION */
+
+.social-header {
+    position: absolute;
+    left: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.the-horiz-one {
+    border-left: 0.2rem solid;
+    border-color: #9e91b7;
+    height: 30rem;
+}
+
+.horiz-two-and-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.the-horiz-two {
+    position: relative;
+    left: 1.1rem;
+    border-left: 0.2rem solid;
+    border-color: #9e91b7;
+    height: 20rem;
+}
+
+.social-in-header {
+    position: relative;
+    left: 0.5rem;
+    height: 10rem;
+}
+
+.logo-social-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+/* END SIDE NAVIGATION */
+
+/* HEADER */
+
+/* START NAV BAR */
+
+nav {
+    position: relative;
+    top: 2rem;
+    width: 80%;
+    height: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav p {
+    font-family: "Beyno";
+}
+
+.logos-nav {
+    width: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logos-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* END NAV BAR */
+
+/* START CONTAINER HEADER */
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-in-header {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    /* justify-content: space-around; */
+}
+
+.container-in-panther1 {
+    position: relative;
+    top: 10rem;
+    padding-left: 1rem;
+}
+
+/* END CONTAINER HEADER */
+
+/* END HEADER SECTION */
+
+/* SLIDER SECTION */
+
+.container-all-carroussel {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-carroussel {
+    display: flex;
+    flex-direction: row;
+    background-color: #021740;
+    height: -1rem;
+}
+
+.container-killmonger,
+.container-okoye,
+.container-shuri {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-image-killmonger,
+.container-image-okoye,
+.container-image-shuri {
+    padding-inline: 2rem;
+}
+
+/* .container-text-killmonger,
+.container-text-okoye,
+.container-text-shuri {
+    padding-inline: 1rem;
+} */
+
+.container-text-killmonger p,
+.container-text-okoye p,
+.container-text-shuri p {
+    font-size: 12px;
+}
+
+/* END SLIDER SECTION */
+
+/* TCHALLA SECTION */
+
+.the-prince {
+    position: relative;
+    top: 8rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* START TCHALLA LEFT */
+
+.articles {
+    padding-inline: 2rem;
+}
+
+.articles p {
+    color: #f2cef2;
+}
+
+/* END TCHALLA LEFT */
+
+/* START THCALLA RIGHT */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.panther3 {
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 2;
+}
+
+.image-panther3 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+
+.tchalla {
+    position: relative;
+    top: -10rem;
+    color: black;
+    background-color: white;
+    width: 75%;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    padding-inline: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.8rem;
+    z-index: 1;
+}
+
+.tchalla h3 {
+    text-align: center;
+}
+
+.tchalla p {
+    color: #021740;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cin {
+    position: relative;
+    top: 1rem;
+    font-family: "Canta";
+}
+
+/* END TCHALLA RIGHT */
+
+/* END TCHALLA SECTION */
+
+/* START FORM SECTION */
+
+#form {
+    position: relative;
+    top: 8rem;
+    background-image: url(../Illustrations-Logo/Accueil/Pantherhome7.png);
+    /* width: 100%; */
+    height: 50rem;
+    background-size: cover;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.the-form {
+    position: relative;
+    width: 70%;
+    height: 38rem;
+    /* padding-top: 1rem; */
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        0.5turn,
+        rgb(255, 255, 255),
+        rgb(255, 255, 255, 0.2)
+    );
+    color: black;
+    border-radius: 8rem;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.the-form p {
+    text-align: center;
+    color: #021740;
+    font-size: 1rem;
+}
+
+.the-form h3 {
+    font-size: 2rem;
+}
+
+.container-in-form {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.div-nom,
+.div-email,
+.textarea {
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+    position: relative;
+    width: 520px;
+    height: 50px;
+    border: 1px solid #021740;
+    border-radius: 30rem;
+    background-color: transparent;
+    padding-left: 2rem;
+    top: 50%;
+}
+
+input[type="email"] {
+    position: relative;
+    width: 520px;
+    height: 50px;
+    border: 1px solid #021740;
+    border-radius: 30rem;
+    background-color: transparent;
+    padding-left: 2rem;
+    top: 50%;
+}
+
+textarea {
+    position: relative;
+    position: relative;
+    width: 520px;
+    height: 180px;
+    border: 1px solid #021740;
+    border-radius: 2rem;
+    background-color: transparent;
+    padding-left: 2rem;
+    top: 50%;
+}
+
+#submit {
+    background-color: #f2cef2;
+    color: #021740;
+    border: none;
+    margin-bottom: 1.5rem;
+    border-radius: 38rem;
+    width: 174px;
+    height: 54px;
+}
+
+#submit:hover {
+    filter: drop-shadow(0px 0px 20px #021740);
+}
+
+/* #submit:hover{
+
+} */
+
+/* END FORM SECTION */
+
+/* START FOOTER SECTION */
+
+footer {
+    position: relative;
+    background: url(../Illustrations-Logo/All-pages/back_footer.png);
+    background-size: cover;
+    color: #f2cef2;
+    top: 10rem;
+}
+
+.container-footer {
+    width: 80%;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-in-footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* .marvel-logo-circle {
+    
+} */
+
+.circle {
+    text-align: center;
+}
+
+.logo-cross {
+    position: relative;
+    text-align: center;
+    top: -50%;
+}
+
+.footer-left {
+    width: 8rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.footer-left a {
+    text-decoration: none;
+    color: #f2cef2;
+}
+
+.footer-social h3 {
+    font-size: 22px;
+    letter-spacing: 28%;
+}
+
+.footer-right {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pages {
+    font-size: 22px;
+    letter-spacing: 0.1rem;
+}
+
+.navigation-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-all-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30rem;
+}
+
+/* .navigation-footer p {
+    color: #f2cef2;
+} */
+
+.nav-and-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-social h3 {
+    display: inline-block;
+    font-size: 22px;
+    letter-spacing: 0.1rem;
+}
+
+.social-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-right {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.copyright p {
+    font-size: 10px;
+}
+
+/* END FOOTER SECTION */

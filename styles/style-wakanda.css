@@ -1,0 +1,325 @@
+/* IMPORTING FONTS */
+
+@font-face {
+    font-family: "Panthera";
+    src: url("../fonts/Panthera.woff2") format("woff2"),
+        url("../fonts/Panthera.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Beyno";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/BEYNO.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Wakanda4";
+    src: url("../fonts/wakandaforever-regular-webfont.woff2") format("woff2"),
+        url("../fonts/pantheraregular-mvz9j-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Canta";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Cantarell-Regular.woff") format("woff");
+}
+
+/* FOR GENERAL RULES */
+body {
+    margin: 0%;
+    background: url(../Illustrations-Logo/All-pages/arrière_plan.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    font-family: "Beyno";
+    letter-spacing: 0.6rem;
+    color: #9e91b7;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+h2 {
+    font-family: "Beyno";
+}
+
+h3 {
+    font-family: "Canta";
+}
+
+p {
+    font-family: "Canta";
+    font-size: 14px;
+}
+
+/* FOR PLACEHOLDER COLOR IN FORM */
+::placeholder {
+    color: #9e91b7;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #9e91b7;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #9e91b7;
+}
+
+/* START HEADER SECTION */
+
+/* START NAV BAR */
+
+nav {
+    position: relative;
+    top: 2rem;
+    width: 80%;
+    height: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav p {
+    font-family: "Beyno";
+}
+
+.logos-nav {
+    width: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logos-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* END NAV BAR */
+
+/* START CONTAINER HEADER */
+
+.container-header {
+    position: relative;
+    top: 2rem;
+    background-image: url(../Illustrations-Logo/Wakanda/wakanda1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+}
+
+.container-in-header {
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+    width: 40rem;
+    font-size: 8px;
+    text-align: justify;
+}
+
+.container-in-header h1 {
+    font-size: 42px;
+    margin-bottom: 0%;
+}
+
+.container-in-header h2 {
+    margin-top: 0%;
+    font-family: "Wakanda4";
+    font-size: 26px;
+    letter-spacing: 0.4rem;
+    color: #9e91b7;
+}
+
+.article-header {
+    width: 60%;
+}
+
+.container-in-header p {
+    margin-top: 2rem;
+    color: white;
+    font-family: "Canta";
+    font-size: 12px;
+}
+
+/* END CONTAINER HEADER */
+
+/* END HEADER SECTION */
+
+/* START MAIN SECTION */
+
+main {
+    padding-top: 12rem;
+    background-image: url(../Illustrations-Logo/Wakanda/Pantherwakanda2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container-all {
+}
+
+.container-all-main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-all-main p {
+    text-align: justify;
+
+    color: white;
+}
+
+.container-all-main h2 {
+    color: #9e91b7;
+    font-size: 1.2rem;
+}
+
+.container-main-left,
+.container-main-right {
+    width: 50%;
+    padding-inline: 1.5rem;
+}
+
+/* END MAIN SECTION */
+
+/* FOOTER SECTION */
+
+footer {
+    background: url(../Illustrations-Logo/All-pages/back_footer.png);
+    background-size: cover;
+    color: #f2cef2;
+}
+
+.container-footer {
+    width: 80%;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-in-footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* .marvel-logo-circle {
+    
+} */
+
+.circle {
+    text-align: center;
+}
+
+.logo-cross {
+    position: relative;
+    text-align: center;
+    top: -50%;
+}
+
+.footer-left {
+    width: 8rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.footer-left a {
+    text-decoration: none;
+    color: #f2cef2;
+}
+
+.footer-social h3 {
+    font-size: 22px;
+    letter-spacing: 28%;
+}
+
+.footer-right {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pages {
+    font-size: 22px;
+    letter-spacing: 0.1rem;
+}
+
+.navigation-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-all-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30rem;
+}
+
+/* .navigation-footer p {
+    color: #f2cef2;
+} */
+
+.nav-and-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-social h3 {
+    display: inline-block;
+    font-size: 22px;
+    letter-spacing: 0.1rem;
+}
+
+.social-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-right {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.copyright p {
+    font-size: 10px;
+}
+
+/* END FOOTER */
