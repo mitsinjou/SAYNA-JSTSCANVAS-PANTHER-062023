@@ -94,10 +94,11 @@ button {
 /* START SIDE NAVIGATION */
 
 .social-header {
-    position: absolute;
+    position: fixed;
     left: 2rem;
     display: flex;
     flex-direction: row;
+    z-index: 3;
 }
 
 .the-horiz-one {
@@ -566,3 +567,11 @@ footer {
 }
 
 /* END FOOTER SECTION */
+
+/* APPARITION EN FADE IN */
+
+.fade-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
