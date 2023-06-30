@@ -213,6 +213,11 @@ nav p {
     flex-direction: row;
     background-color: #021740;
     height: -1rem;
+    overflow: hidden;
+}
+
+.container-carroussel * {
+    width: 300px!;
 }
 
 .container-killmonger,
@@ -226,6 +231,36 @@ nav p {
 .container-image-okoye,
 .container-image-shuri {
     padding-inline: 2rem;
+}
+
+.bouton-carroussel {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #9e91b7;
+    color: white;
+    opacity: 50%;
+    font-size: large;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    top: 12rem;
+    left: 70rem;
+}
+
+.bouton-carroussel:hover {
+    cursor: pointer;
+}
+
+.fleche-slide {
+    position: absolute;
+    top: -0.3rem;
+    font-family: "Rajdhani";
+    font-size: 2rem;
+    color: white;
+    opacity: 100%;
+    font-weight: bolder;
 }
 
 /* .container-text-killmonger,
@@ -570,8 +605,11 @@ footer {
 
 /* APPARITION EN FADE IN */
 
-.fade-in {
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+.fade {
+    opacity: 0; /* Rend l'élément initialement invisible */
+    transition: opacity 0.5s ease; /* Ajoute une transition d'opacité de 0.5 seconde avec une accélération fluide */
+}
+
+.fade.show {
+    opacity: 1; /* Lorsque la classe "show" est ajoutée, l'élément devient visible avec une transition d'opacité */
 }

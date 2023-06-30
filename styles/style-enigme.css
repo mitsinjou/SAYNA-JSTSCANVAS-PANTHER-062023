@@ -76,6 +76,50 @@ p {
     color: #9e91b7;
 }
 
+/* START SIDE NAVIGATION */
+
+.social-header {
+    position: fixed;
+    left: 2rem;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+}
+
+.the-horiz-one {
+    border-left: 0.2rem solid;
+    border-color: #9e91b7;
+    height: 30rem;
+}
+
+.horiz-two-and-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.the-horiz-two {
+    position: relative;
+    left: 1.1rem;
+    border-left: 0.2rem solid;
+    border-color: #9e91b7;
+    height: 20rem;
+}
+
+.social-in-header {
+    position: relative;
+    left: 0.5rem;
+    height: 10rem;
+}
+
+.logo-social-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+/* END SIDE NAVIGATION */
+
 /* HEADER SECTION */
 
 /* NAV BAR */
@@ -451,4 +495,15 @@ footer {
 
 .copyright p {
     font-size: 10px;
+}
+
+/* APPARITION EN FADE IN */
+
+.fade {
+    opacity: 0; /* Rend l'élément initialement invisible */
+    transition: opacity 0.5s ease; /* Ajoute une transition d'opacité de 0.5 seconde avec une accélération fluide */
+}
+
+.fade.show {
+    opacity: 1; /* Lorsque la classe "show" est ajoutée, l'élément devient visible avec une transition d'opacité */
 }
